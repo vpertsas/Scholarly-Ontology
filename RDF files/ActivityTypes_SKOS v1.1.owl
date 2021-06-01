@@ -1,0 +1,1992 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dcu.gr/ontologies/nemo/activity-types/"
+     xml:base="http://dcu.gr/ontologies/nemo/activity-types/"
+     xmlns:at="http://dcu.gr/ontologies/nemo/activity-types/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:nemo="http://dcu.gr/ontologies/nemo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://dcu.gr/ontologies/nemo/activity-types/">
+        <owl:versionIRI rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/1.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/examples -->
+
+    <owl:AnnotationProperty rdf:about="http://dcu.gr/ontologies/nemo/examples"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ActivityType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ActivityType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Access_Management -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Access_Management">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Managing"/>
+        <skos:definition>Managing Access refers to the Activity Type of determining which people can access specific digital objects or content and what they can do with that content, including licensing and Digital Rights Management.</skos:definition>
+        <skos:prefLabel>4.3.10.7 Access Management</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Accessibility_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Accessibility_analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Accessibility analysis refers to the Activity Type that involves designing a computer system to allow all users equal access to the information contained within it and the benefits it provides. Since the introduction of the final element of the Disability Discrimination Act in late 2004, equal access to publicly-available services for disabled users has been a legal requirement for all organizations operating in the United Kingdom.</skos:definition>
+        <skos:prefLabel>4.2.32 Accessibility analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Adding_Metadata -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Adding_Metadata">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Adding_Metainformation"/>
+        <skos:definition>Adding Metadata refers to the Activity Type of making information about an object as a whole explicit by adding it to the digitized representation itself or to a metadata record associated with it. (Although adding metadata is also a form of annotating an object, the latter term is reserved here for adding information to a part of the document’s contents.)</skos:definition>
+        <skos:prefLabel>4.3.1.3 Adding Metadata</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Adding_Metainformation -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Adding_Metainformation">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Adding Metainformation refers to the Activity Type of making information about an object as a whole explicit by adding extra information regarding the digital object itself in order to enhance it semantically.</skos:definition>
+        <skos:prefLabel>4.3.1 Adding Metainformation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Aligning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Aligning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Aligning refers to the Activity Type of placing (things) into correct or appropriate relative positions, according to some specified criteria or properties.</skos:definition>
+        <skos:prefLabel>4.3.18 Aligning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Analyzing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Analyzing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Processing"/>
+        <skos:definition>Analyzing refers to the Activity Type of extracting any kind of information from data, of discovering recurring phenomena, structures, groupings, and the like.</skos:definition>
+        <skos:prefLabel>4.2 Analyzing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Animating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Animating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Animating refers to the Activity Type of creating motion and shape change illusion by means of the rapid display of a sequence of static images that minimally differ from each other.</skos:definition>
+        <skos:prefLabel>4.1.19 Animating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Annotating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Annotating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Annotating refers to the Activity Type of making information about certain elements of a digital object explicit by adding them to a section of a digitized representation or to an annotation file associated with it, usually in order to comment on or contextualize a passage (explanatory annotations), or in order to make structural or linguistic information explicit (structural/linguistic annotation).</skos:definition>
+        <skos:prefLabel>4.2.2 Annotating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Aquiring -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Aquiring">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/ActivityTypes"/>
+        <skos:definition>Acquiring refers to the Activity Type of obtaining or becoming the owner of something may it be of physical thing or conceptual substance. In the later case Acquiring refers to the Activity Type of learning or developing a conceptual object such as a skill, a taste, a habit, etc.</skos:definition>
+        <skos:prefLabel>3 Acquiring</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Archiving -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Archiving">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Archiving refers to the Activity Type of moving data and other resources to a separate space for retention. If long-term archiving is involved, activities related to data preservation may also be involved.</skos:definition>
+        <skos:prefLabel>4.3.4 Archiving</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Assessing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Assessing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Assessing refers to the Activity Type of verifying the existence of certain properties, usually indicative of some desirable quality in some outcome of an activity. This may refer to reviewing research papers or conference proposals, to evaluating the coherence of the annotation of audio-visual materials, or to an assessment of the usefulness of the Digital Humanities.</skos:definition>
+        <skos:prefLabel>4.2.3 Assessing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Associative_Searching -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Associative_Searching">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Associative Searching refers to the Activity Type of searching for information by creating associations between each finding and thus intuitively and thematically narrowing down the potential &quot;hit list&quot;. The first step, entering a search term, results in a hit list with a variety of information and documents. With the semantic-associative search you get highly correlated terms which arise from the found documents. If you select one of these terms, the hit result can be strongly limited. If you want to expand the list of results, you can combine the extracted terms found and start a new search. The result then is a hit list that enables an exploratory search for further research.</skos:definition>
+        <skos:prefLabel>2.1 Associative Searching</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Authoring -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Authoring">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Authoring refers to the Activity Type of creating pieces of writing. In Computer Science, Authoring refers also to the Activity Type of writing programs and databases for computer applications such as computer-assisted learning or multimedia products.</skos:definition>
+        <skos:prefLabel>4.4.8 Authoring</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Bibliographic_Management -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Bibliographic_Management">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Managing"/>
+        <skos:definition>Bibliographic management refers to the Activity Type of capturing, organizing, enriching, and storing citation information.</skos:definition>
+        <skos:prefLabel>4.3.10.5 Bibliographic Management</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Bookmarking -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Bookmarking">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Bookmarking refers to the Activity Type of recording the address of something (for instance, a website, file, etc.) in order to enable quick access in future.</skos:definition>
+        <skos:prefLabel>4.3.8 Bookmarking</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Brainstorming -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Brainstorming">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Brainstorming refers to the Activity Type of collecting spontaneously generated ideas. It may be applicable at any stage of the research process, from identifying new research topics to considering possible solutions to technical problems encountered during the development of digital projects.</skos:definition>
+        <skos:prefLabel>5.1.6 Brainstorming</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Browsing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Browsing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Browsing refers to the Activity Type of casually looking through or gazing over various findings in a collection of data in order to gain an impression of the contents.</skos:definition>
+        <skos:prefLabel>2.3 Browsing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Capturing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Capturing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Capturing refers to the Activity Type of transforming existing objects into a digital representations, in order to allow them to be manipulated using computer technologies.</skos:definition>
+        <skos:prefLabel>4.1.13 Capturing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Cataloguing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Cataloguing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Cataloguing refers to the Activity Type of recording and organizing the semantics and syntax of the data, in order to enable resource discovery and collection management, to improve searchability and access and to allow the data to be collected and shared.</skos:definition>
+        <skos:prefLabel>4.3.14 Cataloguing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Categorizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Categorizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Sorting"/>
+        <skos:definition>Categorizing refers to the Activity Type of grouping and labeling items with similar properties together (by sorts).</skos:definition>
+        <skos:prefLabel>4.3.15.2 Categorizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Classifying -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Classifying">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Classifying refers to the Activity Type of arranging (a group of people or things) in classes or categories according to shared qualities or characteristics.</skos:definition>
+        <skos:prefLabel>4.3.3 Classifying</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Cleanup -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Cleanup">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Cleanup refers to the Activity Type of improving the quality of an existing object. This could include such things as correcting errors in a written text, errors in OCR results, debugging code, improving the quality of video, audio, or image file, etc.</skos:definition>
+        <skos:prefLabel>4.3.16 Cleanup</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Cluster_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Cluster_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Cluster Analysis refers to the Activity Type of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters).</skos:definition>
+        <skos:prefLabel>4.2.26 Cluster Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Coauthoring -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Coauthoring">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Coauthoring refers to the Activity Type of creating pieces of writing together with someone else (collaboratively) rather than individually. Some projects are overseen by an editor or editorial team, but many grow without any oversight. Collaborative writing is also an approach for teaching novice authors to write.</skos:definition>
+        <skos:prefLabel>5.1.1 Coauthoring</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Collaborating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Collaborating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Communicating"/>
+        <skos:definition>Collaborating refers to the Activity Type of working jointly on an activity or a project. This can be achieved by several researchers, possibly in different places and at different times. Research-oriented collaboration is enabled, particularly, through comprehensive Digital Research Environments, but can also happen around more specific activities, such as communication or sharing of resources.</skos:definition>
+        <skos:prefLabel>5.1 Collaborating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Collating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Collating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Collating is the Activity Type of comparing different versions of a text to discover the location and type of textual variants. Collation is fundamental to a variety of scholarly pursuits, for example in the Arts and Humanities field it can be used for the accurate reconstruction of texts of classical works. In the past collation was performed by hand; today, it is performed with the assistance of a computer.</skos:definition>
+        <skos:prefLabel>4.1.16 Collating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Collecting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Collecting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Aquiring"/>
+        <skos:definition>Collecting refers to the Activity Type of systematically and methodically acquiring and bringing together specific objects of a particular interest, in order to build groups of them (collections).</skos:definition>
+        <skos:prefLabel>3.1 Collecting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Collocating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Collocating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Collocating refers to the Activity Type of detecting patterns of words that appear together in a text more often than would be expected by chance. A collocation is a group or pair of words that are always used together, and can illustrate restrictions on which verbs or adjectives can be used with particular nouns, or the order in which words appear.</skos:definition>
+        <skos:prefLabel>4.3.11 Collocating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Collocation_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Collocation_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:prefLabel>4.2.27 Collocation Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Commenting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Commenting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Commenting refers to the Activity Type of adding information to a piece of data, usually in a way that separates the data to which the comment is attached and the comment. It usually serves to express some opinion, to add contextual information, or to engage in communication or collaboration with others about the object commented on. This is different from Annotating (as defined here) which refers to adding descriptive or explanatory information to sections of an object with the aim of making inherent qualities, structures, or meanings of that section explicit.</skos:definition>
+        <skos:prefLabel>4.2.9 Commenting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Communicating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Communicating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/ActivityTypes"/>
+        <skos:definition>Communicating refers to the Activity Type of exchanging ideas with other people, primarily, but not exclusively, using linguistic means.</skos:definition>
+        <skos:prefLabel>5 Communicating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Community_Building -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Community_Building">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Community building refers to the Activity Type of creating or enhancing a community with a common interest. It may include dissemination, teaching as well as advocating for specific activities, practices, or values.</skos:definition>
+        <skos:prefLabel>5.1.7 Community Building</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Comparing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Comparing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Comparing refers to the Activity Type of estimating, measuring or identifying the similarity or dissimilarity between different things.</skos:definition>
+        <skos:prefLabel>4.2.13 Comparing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Composing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Composing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Composing refers to the Activity Type of forming a work of art (a music, text, visual, or dance / theatrical composition), by ordering or arranging the parts / elements, especially in an artistic way.</skos:definition>
+        <skos:prefLabel>4.4.2 Composing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Compressing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Compressing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Compressing refers to the Activity Type of eliminating redundant information of a source file in order to reduce its size, enabling more efficient storage and transmission. Like other forms of compression, video compression can be either lossless or lossy. However, as lossy compression produces considerably smaller files that maintain an acceptable quality.</skos:definition>
+        <skos:prefLabel>4.1.15 Compressing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Conceiving -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Conceiving">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/ActivityTypes"/>
+        <skos:definition>Conceiving refers to the Activity Type of mentally forming or creating an idea. This mental conception can be of any form (an image, text, a melody, an equation, etc.) but without material substance since it constitutes the product of reason or imagination.</skos:definition>
+        <skos:prefLabel>1 Conceiving</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Concept_Formation -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Concept_Formation">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Conceiving"/>
+        <skos:definition>Concept Formation refers to the Activity Type of sorting specific experiences into general rules or classes. This development of ideas or concepts is based on the common properties of objects, events, or qualities using the processes of abstraction and generalization.</skos:definition>
+        <skos:prefLabel>1.2 Concept Formation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Concordancing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Concordancing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Concordancing refers to the Activity Type of creating an alphabetical list of the words (especially the important ones) present in a text or texts, usually with citations of the passages concerned or with the context displayed on a computer screen.</skos:definition>
+        <skos:prefLabel>4.3.12 Concordancing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Consulting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Consulting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Consulting refers to the Activity Type of providing expert advice and opinion to others working on a professional or technical field.</skos:definition>
+        <skos:prefLabel>5.1.9 Consulting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Content_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Content_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Content analysis refers to the Activity Type of analyzing aspects of objects relating to their meaning, such as identifying concepts or meaningful units, by focusing on the content and internal features of media. It is used to determine the presence of certain words, concepts, themes, phrases, characters, or sentences within texts or sets of texts and to quantify this presence in an objective manner.</skos:definition>
+        <skos:prefLabel>4.2.16 Content Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Contextualizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Contextualizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Contextualizing refers to the Activity Type of creating associations between an object of investigation and other, more established or better-understood objects in a relation of geographical, temporal, or thematic proximity to the object of investigation, with the aim of ascribing meaning to that object.</skos:definition>
+        <skos:prefLabel>4.3.13 Contextualizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Conversioning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Conversioning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Conversioning refers to the Activity Type of changing the file format of an object (e.g. converting a .wmv video to a .mov file as well as converting VHS into a digital format) without fundamentally changing the content or nature of the object. When conversion concerns metadata, it involves mapping one metadata schema to another. More fundamental “conversions”, such as converting a scanned page image to an editable text document, are better referred to using “Data Recognition”.</skos:definition>
+        <skos:prefLabel>4.1.7 Conversioning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Course_Management -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Course_Management">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Managing"/>
+        <skos:definition>Course Management refers to the Activity Type of organizing, storing, and communicating the information for a course.</skos:definition>
+        <skos:prefLabel>4.3.10.6 Course Management</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Critiquing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Critiquing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Critiquing refers to the Activity Type of providing a detailed and systematic analysis and assessment of something. Although Critique is commonly understood as fault finding and negative judgment, it can also involve merit recognition, and in the philosophical tradition it also means a methodical practice of doubt.</skos:definition>
+        <skos:prefLabel>4.2.11 Critiquing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Crowdsourcing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Crowdsourcing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Crowdsourcing refers to the Activity Type of generating content by the end-users in a web 2.0 context.</skos:definition>
+        <skos:prefLabel>5.1.5 Crowdsourcing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Curating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Curating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Preserving"/>
+        <skos:definition>Curating refers to the Activity Type of selecting, organizing and looking after specific objects typically using professional or expert knowledge.</skos:definition>
+        <skos:prefLabel>4.5.4 Curating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Data_Mining -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Data_Mining">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Data Mining refers to the Activity Type of using computing power to extract hidden patterns from data, analyzing the results from different perspectives and summarizing it into a useful format, such as a graph or table. This process is often facilitated by the use of metadata. It is important that any patterns found are verified and validated by comparison with other data samples. In this way, data mining can identify trends that go beyond simple data analysis.</skos:definition>
+        <skos:prefLabel>2.6 Data Mining</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Data_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Data_Recognition">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Data Recognition refers to the Activity Type of treating the immediate products of digital data capture (recording or imaging), such as digital facsimiles of texts or of sheet music, in a way to extract discrete, machine-readable units from them, such as plain text words, musical notes, or still or moving image elements (including, for example, face recognition).</skos:definition>
+        <skos:prefLabel>4.2.12 Data Recognition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Debugging -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Debugging">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Debugging refers to the Activity Type of finding and reducing the number of bugs, or defects, in a computer program or a piece of electronic hardware, thus making it behave as expected.</skos:definition>
+        <skos:prefLabel>4.1.12 Debugging</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Design_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Design_analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Design analysis refers to the activity Type for simulating physical behavior on the computer. Instead of building a prototype and developing elaborate testing regimens to analyze the physical behavior of a product, engineers can elicit this information quickly and accurately using this technology.</skos:definition>
+        <skos:prefLabel>4.2.30 Design analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Designing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Designing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Designing refers to the Activity Type of the creating a plan or convention for the construction of an object or a system (as in architectural blueprints, engineering drawings, business processes, circuit diagrams and sewing patterns). Designing has different connotations in different fields. In some cases the direct construction of an object (as in pottery, engineering, management, cowboy coding and graphic design) is also considered as designing.</skos:definition>
+        <skos:prefLabel>4.4.5 Designing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Developing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Developing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Programming"/>
+        <skos:definition>Developing refers to the Activity Type of elaborating on something in order to become more mature and efficient.</skos:definition>
+        <skos:prefLabel>4.4.7.1 Developing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Digitizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Digitizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Digitizing refers to the Activity Type of converting something (an input) into digital form that can be processed by a computer.</skos:definition>
+        <skos:prefLabel>4.1.10 Digitizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Direct_Accessing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Direct_Accessing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Direct Accessing refers to the Activity Type of accessing an item of data at any given coordinates in a population of addressable elements. As a rule the assumption is that each element can be accessed roughly as easily and efficiently as any other, no matter how many elements may be in the set, nor how many coordinates may be available for addressing the data.</skos:definition>
+        <skos:prefLabel>2.2 Direct Accessing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Discussing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Discussing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Discussing refers to the Activity Type of casually talking about something, taking into account different issues or ideas.</skos:definition>
+        <skos:prefLabel>5.1.10 Discussing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Disseminating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Disseminating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Communicating"/>
+        <skos:definition>Disseminating refers to the Activity Type of making objects of inquiry, results of research, or software and services available to fellow researchers or the wider public in a variety of more or less formal ways. It builds on or requires storing and can include releasing and sharing of data using a variety of methods and techniques including the application of linked open data.</skos:definition>
+        <skos:prefLabel>5.2 Disseminating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Documenting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Documenting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Documenting refers to the Activity Type of providing information regarding each and every step of the activities that took place in a Project, in order to describe how everything was done and enable someone that was not initially involved to understand.</skos:definition>
+        <skos:prefLabel>4.3.19 Documenting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Downloading -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Downloading">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">4.3.22 Downloading</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Editing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Editing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Editing refers to the Activity Type of improving the quality of an object that has been “captured” by some means.</skos:definition>
+        <skos:prefLabel>4.1.2 Editing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Emulating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Emulating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Preserving"/>
+        <skos:definition>Emulating refers to the Activity Type of imitating the behavior of a computer or other electronic system with the help of another type of computer/system thus focusing on exact reproduction of behavior in contrast to some other forms of computer simulation, in which an abstract model of a system is being simulated.</skos:definition>
+        <skos:prefLabel>4.5.5 Emulating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Encoding -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Encoding">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Encoding refers to the Activity Type of making structural, layout-related, semantic, or other information about a specific part of a document explicit by adding (inline or stand-off) markup to its transcription. This is typically part of the larger activity of scholarly editing of textual, musical, or other sources. It is based on a transcription of the document (the result of data recognition) and guided by a model of the document (the result of modeling).</skos:definition>
+        <skos:prefLabel>4.1.4 Encoding</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Enhancement -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Enhancement">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Enhancement refers to the Activity Type of improving the appearance of digital, as well as analogue, objects such as images, audio signals, video files etc.</skos:definition>
+        <skos:prefLabel>4.1.17 Enhancement</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Enriching -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Enriching">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Enrichment refers to the Activity Type of adding information to an object of enquiry, by making its origin, nature, structure, or elements explicit. This activity follows the capture of the object.</skos:definition>
+        <skos:prefLabel>4.1.3 Enriching</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Estimating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Estimating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Estimating refers to the Activity Type of finding an approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable. The value is none the less usable because it is derived from the best information available. Typically, Estimating involves &quot;using the value of a statistic derived from a sample to estimate the value of a corresponding population parameter&quot;. The sample provides information that can be projected, through various formal or informal processes, to determine a range most likely to describe the missing information.</skos:definition>
+        <skos:prefLabel>4.2.4 Estimating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Evaluating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Evaluating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Evaluating refers to the Activity Type of determining systematically a subject&apos;s merit, worth and significance, using criteria governed by a set of standards. The primary purpose of evaluation, in addition to gaining insight into prior or existing initiatives, is to enable reflection and assist in the identification of future change. Evaluation is often used to characterize and appraise subjects of interest in a wide range of human enterprises, including the arts, criminal justice, foundations, non-profit organizations, government, health care, and other human services.</skos:definition>
+        <skos:prefLabel>4.2.5 Evaluating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Extracting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Extracting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">3.4 Extracting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Extracting_Data -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Extracting_Data">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">3.4.1 Extracting Data</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Extracting_Metadata -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Extracting_Metadata">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">3.4.2 Extracting Metadata</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Filtering -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Filtering">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Filtering refers to the Activity Type of processing or accessing items through specific criteria (the ones of the filter) in order to reject those that are unwanted.</skos:definition>
+        <skos:prefLabel>2.4 Filtering</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Formatting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Formatting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Formatting refers to the Activity Type of arranging the form of an object in order to prepare it to receive data, while destroying all of its existing contents..</skos:definition>
+        <skos:prefLabel>4.1.14 Formatting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Gamification -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Gamification">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Disseminating"/>
+        <skos:definition>Gamification refers to the Activity type of using game thinking and game mechanics in non-game contexts to engage users in solving problems. Gamification has been studied and applied in several domains, with some of the main purposes being to engage, teach, entertain, measure, and to improve the perceived ease of use of information systems.</skos:definition>
+        <skos:prefLabel>5.2.4 Gamification</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Gathering -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Gathering">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Aquiring"/>
+        <skos:definition>Gathering refers to the Activity Type of aggregating discovered resources, usually in some structured way (e.g. bringing together all papers that address a certain topic, as part of a literature review, or pulling all works by a particular author out of a digital collection for further analysis).</skos:definition>
+        <skos:prefLabel>3.2 Gathering</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Georeferencing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Georeferencing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Adding_Metainformation"/>
+        <skos:definition>Georeferencing refers to the Activity Type of associating something with locations in physical space. The term is commonly used in the geographic information systems field to describe the process of associating a physical map or raster image of a map with spatial locations. Georeferencing may be applied to any kind of object or structure that can be related to a geographical location, such as points of interest, roads, places, bridges, or buildings.</skos:definition>
+        <skos:prefLabel>4.3.1.1 Georeferencing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Harvesting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Harvesting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">3.5 Harvesting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Highlighting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Highlighting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Highlighting refers to the Activity Type of making something visually prominent in order to draw special attention to.</skos:definition>
+        <skos:prefLabel>4.2.6 Highlighting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Human_factors_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Human_factors_analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Human factors analysis: The &apos;human factors&apos; of a computing system covers two main areas: the first is the social impact that the system will have, while the second concerns the relationship that the system&apos;s users will have with it.</skos:definition>
+        <skos:prefLabel>4.2.33 Human factors analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Hypothesis_Formulation -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Hypothesis_Formulation">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Conceiving"/>
+        <skos:definition>Hypothesis Formulation refers to the Activity Type of defining an initial proposed explanation for a phenomenon to be tested in the research process. This type of Activity usually occurs after the identification of research question. The difference here is that while the research question is broad and includes all the variables you want your study to consider, the hypothesis is a statement that specific relationship you expect to find from your examination of these variables.</skos:definition>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1 Hypothesis Formulation</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Identifying -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Identifying">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Identifying refers to the Activity Type of assigning (possibly unique and/or persistent) identifiers to objects of enquiry or to any kind of digital object.</skos:definition>
+        <skos:prefLabel>4.2.7 Identifying</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Illustrating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Illustrating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Visualizing"/>
+        <skos:definition>Illustrating refers to the Activity Type of using visualization, in order to stress subject more than form. Illustrations can include drawings, paintings, photographs or digital images that decorate textual information and act as a visual representation of its content. In particular, illustrations can often provide the reader with a greater understanding of the subject matter than merely a textual description.</skos:definition>
+        <skos:prefLabel>4.1.6.2 Illustrating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Image_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Image_Recognition">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">4.2.12.3 Image Recognition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Imaging -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Imaging">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Visualizing"/>
+        <skos:definition>Imaging refers to the Activity Type of capturing texts, images, artifacts or spatial formations using optical means. Imaging can be made in 2D or 3D, using various means (light, laser, infrared, ultrasound). Imaging usually does not lead to the identification of discrete semantic or structural units in the data, such as words or musical notes, which is something Data Recognition accomplishes. Imaging also includes scanning and digital photography.</skos:definition>
+        <skos:prefLabel>4.1.6.1 Imaging</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Indexing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Indexing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Indexing refers to the Activity Type of generating indexes of words in a text, in order that the reader can find information quickly and easily. Although indexing is still usually performed by hand, specialized computer software is often used to facilitate sorting, editing, formatting and printing.</skos:definition>
+        <skos:prefLabel>4.3.2 Indexing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Information_Retrieval -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Information_Retrieval">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Information Retrieval refers to the Activity Type of analyzing large amounts of data, usually text, with the aim of retrieving information or knowledge from it.</skos:definition>
+        <skos:prefLabel>4.2.39 Information Retrieval</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Interpreting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Interpreting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Interpreting refers to the Activity Type of ascribing meaning to phenomena observed in analysis. Therefore, interpretation usually follows analysis, although it could also be considered that interpretation defines the hermeneutic perspective of any method of analysis.</skos:definition>
+        <skos:prefLabel>4.2.10 Interpreting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/IntertextualAnalysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/IntertextualAnalysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Intertextual Analysis refers to the Activity Type of discovering lexical overlap between various texts. It can be used, for example, for the analysis of text reuse across time, or for plagiarism detection.</skos:definition>
+        <skos:prefLabel>4.2.28 IntertextualAnalysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Interviewing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Interviewing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Interviewing refers to the Activity Type of conversing with other(s) in the form of questions which are asked by the interviewer in order to elicit facts or statements from the interviewee. Interviews are a standard part of journalism and media reporting, but are also employed in many other situations, including qualitative research etc.</skos:definition>
+        <skos:prefLabel>5.1.8 Interviewing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Learning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Learning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Aquiring"/>
+        <skos:definition>Learning refers to the Activity Type of acquiring knowledge through study, experience or being tought.</skos:definition>
+        <skos:prefLabel>3.3 Learning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Lemmatization -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Lemmatization">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Lemmatization refers to the Activity Type used to group a set of forms of a word (a lexeme) together under a single headword, or lemma – the form of the word that would be listed in a dictionary, glossary or index. This enables different inflected forms of the same word to be analyzed as a single item, which is useful when compiling frequency and distribution information.</skos:definition>
+        <skos:prefLabel>4.2.37 Lemmatization</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Linking -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Linking">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Linking refers to the Activity Type of connecting or joining something to something else.</skos:definition>
+        <skos:prefLabel>4.3.6 Linking</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Locating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Locating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Locating refers to the Activity Type of discovering the exact place or position of an item.</skos:definition>
+        <skos:prefLabel>2.5 Locating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Machine_Learning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Machine_Learning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Machine Learning refers to the Activity Type that deals with complex, high-dimensional data, usually with the aim of reducing complexity, discovering patterns, or some classification of items. It is based on the automatic discovery of systematic links or correlations between certain features of the items in the set and the classes the items can be assigned to.</skos:definition>
+        <skos:prefLabel>4.2.40 Machine Learning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Managing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Managing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Managing refers to the Activity Type of organization, coordination, monitoring and adaptation of systems development tasks and resources.</skos:definition>
+        <skos:prefLabel>4.3.10 Managing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Mapping -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Mapping">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Mapping refers to the Activity Type of assigning geographic information, such as geolocation coordinates, canonical identifiers and other information, to digital objects and displaying a map that refers to those objects in some way. In particular, such mapping can also involve temporal information and also use this for display.</skos:definition>
+        <skos:prefLabel>4.3.5 Mapping</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Measuring -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Measuring">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Measuring refers to the Activity Type of ascertain the size, amount, or degree of (something) by using an instrument or device marked in standard units.</skos:definition>
+        <skos:prefLabel>4.2.14 Measuring</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Migrating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Migrating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Preserving"/>
+        <skos:definition>Migrating refers to the Activity Type of moving something from one part to an other. In Computer Science, migrating also refers to the Activity Type of transferring data between storage types, formats, or computer systems. It is a key consideration for any system implementation, upgrade, or consolidation. Data migration is usually performed programmatically to achieve an automated migration, freeing up human resources from tedious tasks. Data migration occurs for a variety of reasons, including: Server or storage equipment replacements or upgrades; Website consolidation; Server maintenance; and Data center relocation.</skos:definition>
+        <skos:prefLabel>4.5.2 Migrating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Mixing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Mixing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Mixing refers to the Activity Type of combining, juxtaposing or putting together different objects in order to form one substance or mass.</skos:definition>
+        <skos:prefLabel>4.1.9 Mixing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Modeling -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Modeling">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Capturing"/>
+        <skos:definition>Modeling refers to the Activity Type of describing the elements and the structure of an object of enquiry in a machine-readable, explicit way, in order to construct an actionable representation of some object of research; the result of such modeling can be a schema. Modeling can also refer to the activity of transforming or manipulating a digital object in such a way as to make it compatible with a previously constructed model or schema.</skos:definition>
+        <skos:prefLabel>4.1.13.3 Modeling</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Modifying -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Modifying">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Processing"/>
+        <skos:definition>Modifying refers to the Activity Type of making partial or minor changes to something in order to alter specific characteristics of it. In Thus in Modifying activities the output is different than the input.</skos:definition>
+        <skos:prefLabel>4.1 Modifying</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Morphological_Tagging -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Morphological_Tagging">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Tagging"/>
+        <skos:definition>Morphological Tagging refers to the Activity Type of labeling words in a text with their appropriate detailed morphological information.</skos:definition>
+        <skos:prefLabel>4.3.1.2.2 Morphological Tagging</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Motion_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Motion_analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Motion analysis refers to the Activity Type of providing systematic, time-dependent and quantitative data on any movement captured using digital video, as recorded in moving image collections. It is related to motion capture, which is the process of recording movement and translating that movement onto a digital model.</skos:definition>
+        <skos:prefLabel>4.2.31 Motion analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Named_Entity_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Named_Entity_Recognition">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Data_Recognition"/>
+        <skos:definition>Named Entity Recognition (NER) refers to the Activity Type of classifying elements in text into predefined categories such as the names of persons, organizations, locations, expressions of times, etc.</skos:definition>
+        <skos:prefLabel>4.2.12.1 Named Entity Recognition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Network_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Network_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Network Analysis refers to the Activity Type of examining the relations of (real or fictional) actors or other entities in a mediated network, which can take the form of a social or academic online network, a set of correspondence, or a work of literature; the resulting network is usually made up of nodes (entities) and edges (relations).</skos:definition>
+        <skos:prefLabel>4.2.17 Network Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Networking -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Networking">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Networking refers to the Activity Type of exchanging information or services among individuals, groups, or institutions, in order to cultivate productive relationships for collaboration.</skos:definition>
+        <skos:prefLabel>5.1.2 Networking</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Optical_Character_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Optical_Character_Recognition">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">4.2.12.4 Optical Character Recognition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Ordering -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Ordering">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Sorting"/>
+        <skos:definition>Ordering refers to the Activity Type of arranging items of the same kind, class or nature, in some ordered sequence.</skos:definition>
+        <skos:prefLabel>4.3.15.1 Ordering</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Organizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Organizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Processing"/>
+        <skos:definition>Organizing refers to the Activity Type of arranging objects (research materials, data sets, images, etc.) in a way such as to facilitate other research activities.</skos:definition>
+        <skos:prefLabel>4.3 Organizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Overlaying -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Overlaying">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Overlaying refers to the Activity Type of producing a geometric intersection between two sets of data in order to highlight features of interest. Overlaying is often used when studying or displaying maps. Specifically, the term ‘overlaying’ refers to the use of vector data. A similar method called ‘data extraction’ is performed using raster data.</skos:definition>
+        <skos:prefLabel>4.1.5 Overlaying</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/POS_Tagging -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/POS_Tagging">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Tagging"/>
+        <skos:definition>POS Tagging (also called grammatical tagging or word-category disambiguation) refers o the Activity Type of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition, as well as its context—i.e. relationship with adjacent and related words in a phrase, sentence, or paragraph. A simplified form of this is commonly taught to school-age children, in the identification of words as nouns, verbs, adjectives, adverbs, etc.</skos:definition>
+        <skos:prefLabel>4.3.1.2.1 POS Tagging</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Parsing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Parsing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Parsing refers to the Activity Type used in both computer science and linguistics. The term is synonymous with ‘syntactic analysis’, and refers to the process of taking a sequence (e.g. of characters), determining its structure, and checking whether it is legal in a given language. This is done by checking the structure of the sequence against a given formal grammar.</skos:definition>
+        <skos:prefLabel>4.2.15 Parsing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Partitioning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Partitioning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Partitioning refers to the Activity Type of dividing something into parts. In Computer Science, Disk partitioning is the act of dividing a hard disk drive (HDD) into multiple logical storage units referred to as partitions, to treat one physical disk drive as if it were multiple disks, so that a different file system can be used on each partition.</skos:definition>
+        <skos:prefLabel>4.3.17 Partitioning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Performing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Performing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Performing refers to the Activity Type of carrying out or accomplishing something and presenting it to an audience.</skos:definition>
+        <skos:prefLabel>4.4.4 Performing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Photogrammetry -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Photogrammetry">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Photogrammetry refers to the Activity Type used to obtain reliable measurements or information from digital or analogue photographs (photo-grammes). It is often classified as a type of remote sensing, as objects are measured without being touched.</skos:definition>
+        <skos:prefLabel>4.2.36 Photogrammetry</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Photographing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Photographing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Capturing"/>
+        <skos:definition>Photographing refers to the Activity Type of creating still or moving pictures by recording radiation on a sensitive medium, such as a photographic film (a film camera), or an electronic sensor (a digital camera). The different types of camera are each more suited to different situations and objectives.</skos:definition>
+        <skos:prefLabel>4.1.13.4 Photographing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Presenting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Presenting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Disseminating"/>
+        <skos:definition>Presenting refers to the Activity Type of showing or offering something to others (an audience) in order to scrutinize or consider.</skos:definition>
+        <skos:prefLabel>5.2.2 Presenting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Preserving -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Preserving">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Processing"/>
+        <skos:definition>Preserving refers to the Activity Type of applying specific strategies, activities and technologies for the purpose of ensuring an accurate rendering of digital content over time. It facilitates the reuse of research data, objects, and related resources and may include activities related to sustainability and interoperability.</skos:definition>
+        <skos:prefLabel>4.5 Preserving</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Principal_Component_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Principal_Component_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:prefLabel>4.2.23 Principal Component Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Printing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Printing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Printing refers to the Activity type of reproducing text and images using a master form or template.</skos:definition>
+        <skos:prefLabel>4.4.1 Printing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Problem_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Problem_Recognition">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Conceiving"/>
+        <skos:definition>Problem Recognition refers to the Activity Type of identifying the need to investigate a specific topic that lacks analysis or hasn&apos;t been investigated through a specific method yet. This necessity for the research to be carried out is developed while going though literatures, discourses with experts, into a specific problem that will be interesting or rewarding if investigated.</skos:definition>
+        <skos:prefLabel>1.4 Problem Recognition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Processing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Processing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/ActivityTypes"/>
+        <skos:definition>Processing refers to the Activity Type of performing a series of actions in something (an input) in order to achieve a particular result (output).</skos:definition>
+        <skos:prefLabel>4 Processing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Producing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Producing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Processing"/>
+        <skos:definition>Producing refers to the Activity Type of generating or manufacturing something from components or raw materials.</skos:definition>
+        <skos:prefLabel>4.4 Producing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Programming -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Programming">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Programming refers to the Activity Type of creating a code executable by a computer, such as scripts or software. The purpose of programming is to find a sequence of instructions that will automate performing a specific task or solve a given problem. The process of programming thus often requires expertise in many different subjects, including knowledge of the application domain, specialized algorithms and formal logic.</skos:definition>
+        <skos:prefLabel>4.4.7 Programming</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Project_Management -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Project_Management">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Managing"/>
+        <skos:definition>Project Management refers to the Activity Type of developing a strategy and assessing risk for conducting a project, as well as task management activities, such as keeping a record of tasks, due dates, and other relevant information. It optionally includes activities such as sending reminders and status reports. Project Management is related to Collaboration.</skos:definition>
+        <skos:prefLabel>4.3.10.1 Project Management</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Prototyping -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Prototyping">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Prototyping refers to the Activity Type of creating a model of a new system or product. It is often used as part of the design process in order to explore alternatives, test theories and confirm performance prior to starting production of a product.</skos:definition>
+        <skos:prefLabel>4.4.3 Prototyping</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Publishing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Publishing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Disseminating"/>
+        <skos:definition>Publishing refers to the Activity Type of making any kind of object formally available to the wider public. This can involve objects of research, research data, research results, or tools and services. Publishing can be closed or open access / open source, and research results can be published in print or digital formats.</skos:definition>
+        <skos:prefLabel>5.2.3 Publishing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Record_linkages_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Record_linkages_analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Record Linkages Analysis refers to the Activity Type of linking records from different sources, by finding entries that refer to the same entity (e.g. person) in two or more files. These entries can be combined to form individual micro records.</skos:definition>
+        <skos:prefLabel>4.3.21 Record linkages analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Recording -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Recording">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Capturing"/>
+        <skos:definition>Recording refers to the Activity Type of capturing data or translating information to a recording format stored on some storage medium, which is often referred to as a record or, especially if an auditory or visual medium, a recording. This can be achieved in analogue or digital ways resulting in analogue recordings or digital files stored in different formats (such as WAV, MP3, MPEG4, AVI, etc.).</skos:definition>
+        <skos:prefLabel>4.1.13.1 Recording</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Referring -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Referring">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Referring refers to the Activity Type of mentioning or alluding someone (or something) in order to identify it.</skos:definition>
+        <skos:prefLabel>4.3.7 Referring</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Relational_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Relational_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Relational Analysis refers to the Activity Type of discovering specific relations between several objects of study. In textual studies, this could mean discovering overlap between several different texts (study of text reuse / plagiarism), or textual variations between several versions of one text (collation), or assessing the similarity of texts in terms of stylistic features (stylometry). By analogy, such methods can also be applied to other cultural artifacts, such as music, film or painting.</skos:definition>
+        <skos:prefLabel>4.2.18 Relational Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Rendering -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Rendering">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Rendering, in a computer graphics context, refers to Activity Type of generating an image from a digital model, by computing its surface qualities, such as color, shading, smoothness and texture. Rendering can achieve both photorealistic and non-photorealistic results, and is the final step in the animation process.</skos:definition>
+        <skos:prefLabel>4.4.9 Rendering</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Resource_Sharing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Resource_Sharing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Resource sharing refers to the Activity Type of audio, textual, video and graphical data provision and exchange on a peer-to-peer network, wiki, Virtual Research Environment, or similar means for collaboration or publication.</skos:definition>
+        <skos:prefLabel>5.1.4 Resource Sharing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Restoration -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Restoration">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Restoration refers to the Activity Type of repairing, rectifying or renovating something in order to bring it back to its original or former condition.</skos:definition>
+        <skos:prefLabel>4.1.18 Restoration</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Retrieving -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Retrieving">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Retrieving refers to the Activity Type of structured searching in a large collection of data items (such as individual texts or images) for a specific subset of these data items according to specific criteria.</skos:definition>
+        <skos:prefLabel>2.7 Retrieving</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Risk_Management -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Risk_Management">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Managing"/>
+        <skos:definition>Risk management refers to the Activity Type of analyzing the risks inherent in the development of an information system, and developing strategies to mitigate them, depending upon their likely impact. Risk Management should minimize spending, but maximize the reduction of the negative effects of the various possible risks to the project.</skos:definition>
+        <skos:prefLabel>4.3.10.3 Risk Management</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Scanning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Scanning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Capturing"/>
+        <skos:definition>Scanning refers to the Activity Type of capturing texts, images, artifacts or spatial formations using optical means. Scanning can be made in 2D or 3D, using various means (light, laser, infrared, ultrasound). Scanning usually does not lead to the identification of discrete semantic or structural units in the data, such as words or musical notes, which is something Data Recognition accomplishes. Scanning also includes photographic reproduction.</skos:definition>
+        <skos:prefLabel>4.1.13.2 Scanning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Seeking -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Seeking">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/ActivityTypes"/>
+        <skos:definition>Seeking refers to the Activity Type of attempting to find something through various types of search methods.</skos:definition>
+        <skos:prefLabel>2 Seeking</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Sensing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Sensing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Capturing"/>
+        <skos:definition>Sensing refers to the Activity Type of acquiring information about an object or phenomenon, by using equipment that is either wireless, or not in physical contact with the object or phenomenon itself.</skos:definition>
+        <skos:prefLabel>4.1.13.6 Sensing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Sentiment_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Sentiment_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Sentiment Analysis refers to the Activity Type of identifying the positive, neutral, or negative evaluative attitude expressed in a text or section of a text. It is sometimes called opinion mining and is related to Semantic Prosody Analysis.</skos:definition>
+        <skos:prefLabel>4.2.24 Sentiment Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Sequence_Alignment -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Sequence_Alignment">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Sequence Alignment refers o the Activity Type of arranging sequences to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between them.</skos:definition>
+        <skos:prefLabel>4.2.25 Sequence Alignment</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Social_Network_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Social_Network_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Social Network Analysis refers to the Activity Type that studies the relations of actors in a mediated network, which can take the form of a social or academic online network, a set of correspondence, or a work of literature; the resulting network is usually made up of nodes (entities) and edges (relations).</skos:definition>
+        <skos:prefLabel>4.2.38 Social Network Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Sorting -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Sorting">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Sorting refers to the Activity Type of arranging items according to a certain sequence or in different sets.</skos:definition>
+        <skos:prefLabel>4.3.15 Sorting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Spatial_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Spatial_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Spatial Analysis refers to the Activity Type of discovering trends or patterns in data pertaining to spatial or geographical aspects of the data. Spatial analysis is often based on techniques of annotation of data, such as Georeferencing or Named Entity Recognition, and may lead to visualization or modeling in the form of maps.</skos:definition>
+        <skos:prefLabel>4.2.19 Spatial Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Speech_Recognition -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Speech_Recognition">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">4.2.12.2 Speech Recognition</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Standardizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Standardizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Standardizing refers to the Activity Type of translating large amounts of data from diverse sources into standardized codes for data processing.</skos:definition>
+        <skos:prefLabel>4.3.9 Standardizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Statistical_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Statistical_analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Statistical Analysis refers to the Activity Type of studying the collection, analysis, interpretation, presentation and organization of data.</skos:definition>
+        <skos:prefLabel>4.2.29 Statistical analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Stemmatic_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Stemmatic_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Stemmatic Analysis refers to the Activity Type used to reconstruct the transmission of a text on the basis of relations between the various surviving manuscripts.</skos:definition>
+        <skos:prefLabel>4.2.35 Stemmatic Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Storing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Storing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Preserving"/>
+        <skos:definition>Storing refers to the activity of making digital copies of objects of inquiry, results of research, or software and services and of keeping them accessible, without necessarily making them available to the public. If long-term archiving is involved, activities related to data security, data replication, and version control are also involved.</skos:definition>
+        <skos:prefLabel>4.5.1 Storing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Strategic_Management -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Strategic_Management">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Managing"/>
+        <skos:definition>Strategic Management refers to the Activity Type of providing input into networking, coordination, strategic planning, and the legal/ financial elements of digital humanities.</skos:definition>
+        <skos:prefLabel>4.3.10.4 Strategic Management</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Streaming -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Streaming">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Disseminating"/>
+        <skos:definition>Streaming refers to the Activity Type of transmitting data in a continuous way so that they are constantly received by and presented to an end-user while being delivered by a provider.</skos:definition>
+        <skos:prefLabel>5.2.5 Streaming</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Structural_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Structural_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Structural Analysis refers to the Activity Type of analyzing objects on the level of the relations between structural elements of a cultural artifact (level of morphology or syntax in linguistics).</skos:definition>
+        <skos:prefLabel>4.2.20 Structural Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Stylistic_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Stylistic_Analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Stylistic Analysis refers to the Activity Type that identifies stylistic or formal features of digital objects. Although computational stylistics is in many cases applied to texts and based on linguistic features, it can also be applied to other media such as physical artifacts, painting, music or movies.</skos:definition>
+        <skos:prefLabel>4.2.21 Stylistic Analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Stylometry -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Stylometry">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Stylometry refers to the Activity Type of measuring various stylistic features of digital objects and of grouping the objects according to their statistical similarity. The groupings show effects for authorship, chronology, genre, gender, style, theme, and other categories. Usually applied to texts and based on linguistic features, stylometry can also be applied to music or painting.</skos:definition>
+        <skos:prefLabel>4.2.22 Stylometry</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Subtitling -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Subtitling">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:prefLabel xml:lang="en">4.4.11 Subtitling</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Summarizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Summarizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Summarizing refers to the Activity Type of giving a brief statement of the main points of something.</skos:definition>
+        <skos:prefLabel>4.1.1 Summarizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Surveying -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Surveying">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Capturing"/>
+        <skos:definition>Surveying refers to the Activity Type of ground-based physical sensing techniques used for imaging or mapping, although data may be collected from above or below the Earth&apos;s surface or from aerial or marine platforms.</skos:definition>
+        <skos:prefLabel>4.1.13.5 Surveying</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Synthesizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Synthesizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Synthesizing refers to the Activity Type of producing sound electronically.</skos:definition>
+        <skos:prefLabel>4.4.6 Synthesizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Tagging -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Tagging">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Adding_Metainformation"/>
+        <skos:definition>Tagging refers to the Activity Type of creating non-hierarchical keywords or terms assigned to a piece of information (such as an Internet bookmark, digital image, or computer file). This kind of metadata helps describe an item and allows it to be found again by browsing or searching. Tags are generally chosen informally and personally by the item&apos;s creator or by its viewer, depending on the system.</skos:definition>
+        <skos:prefLabel>4.3.1.2 Tagging</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Task_Management -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Task_Management">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Managing"/>
+        <skos:definition>Task Management refers to the Activity Type of keeping a record of tasks, due dates, and other relevant information regarding the particular tasks that are involved in a Project</skos:definition>
+        <skos:prefLabel>4.3.10.2 Task Management</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Teaching -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Teaching">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Disseminating"/>
+        <skos:definition>Teaching refers to the Activity Type of imparting knowledge to or instruct (someone) as to how to do something. This way someone acquires and/or develops skills, competencies, and knowledge that lets him solve problems in a specific area of research.</skos:definition>
+        <skos:prefLabel>5.2.1 Teaching</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Tele_Conferencing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Tele_Conferencing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Collaborating"/>
+        <skos:definition>Teleconferencing refers to the Activity Type of live exchanging information and communicating with other participants in different locations but linked by a telecommunications system.</skos:definition>
+        <skos:prefLabel>5.1.3 Tele Conferencing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Theorizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Theorizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Theorizing refers to the Activity Type of relating a number of elements or ideas into a coherent system based on some general principles and capable of explaining relevant phenomena or observations. Theorizing relies on techniques such as reasoning, abstract thinking, conceptualizing and defining. A theory may be implemented in the form of a model, or a model may give rise to formulating a theory.</skos:definition>
+        <skos:prefLabel>4.2.8 Theorizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Tokenization -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Tokenization">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Organizing"/>
+        <skos:definition>Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens</skos:definition>
+        <skos:prefLabel>4.3.20 Tokenization</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Tracking -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Tracking">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Seeking"/>
+        <skos:definition>Tracking refers to the Activity Type of following systematically and methodically something in order to note its course.</skos:definition>
+        <skos:prefLabel>2.8 Tracking</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Transcribing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Transcribing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Transcribing refers to the Activity Type of conversioning spoken into written words, or of handwriting or a photograph of text into pure text. Additionally, the term can apply to the conversion of a written source into another medium, such as scanning it to produce a digital version, or to the arrangement of a piece of music in order to be played from different instruments.</skos:definition>
+        <skos:prefLabel>4.1.11 Transcribing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Translating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Translating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Translating refers to the Activity Type of creating a new linguistic object based on a source document but written in a different language than the source. This applies to both natural languages and machine-readable programming languages.</skos:definition>
+        <skos:prefLabel>4.1.8 Translating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Usability_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Usability_analysis">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Usability analysis refers to the Activity Type that determines the &quot;ease of use&quot; of a computer system. It analyses how well it conveys information about its purpose and the methods available for users to achieve their goals. The term can also encompass the standards and guidelines of design for accessibility.</skos:definition>
+        <skos:prefLabel>4.2.34 Usability analysis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Validating -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Validating">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Analyzing"/>
+        <skos:definition>Validating refers to the Activity Type of verifying that something meets certain specified criteria.</skos:definition>
+        <skos:prefLabel>4.2.1 Validating</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Versioning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Versioning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Preserving"/>
+        <skos:definition>Versioning refers to the Activity Type of management and control of features and changes made to software throughout the life cycle of an ICT project.</skos:definition>
+        <skos:prefLabel>4.5.3 Versioning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Visualizing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Visualizing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Modifying"/>
+        <skos:definition>Visualizing refers to the Activity Type of summarizing and presenting in a graphical form. These graphical forms can be used analytically, in order to detect patterns, structures, or points of interest in the underlying data. Virtually any kind of data can be visualized, and the forms of visualizations can be images, maps, timelines, graphs, or tables, and the like.Visualisation often uses computer graphics software, including virtual reality and 2-D or 3-D animation, as well as static images.</skos:definition>
+        <skos:prefLabel>4.1.6 Visualizing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Web-Developing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Web-Developing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Developing"/>
+        <skos:definition>Web-Developing refers to the Activity Type of creation of websites, by building on a platform (e.g. content management systems such as Drupal, WordPress and Omeka) or writing HTML, JavaScript, etc. Writing a module/plugin for a platform, or programming web-based applications, should use the “Programming” Activity Type.</skos:definition>
+        <skos:prefLabel>4.4.7.1.1 Web-Developing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Writing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Writing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Producing"/>
+        <skos:definition>Writing refers to the Activity Type of creating new texts (instead of capturing existing text). In our context, this would primarily concern research papers and reports, but may include other textually-oriented objects.</skos:definition>
+        <skos:prefLabel>4.4.10 Writing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/2D_Printing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/2D_Printing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Printing"/>
+        <skos:definition>2D Printing refers to the Activity Type of printing ink on paper using a printing press. Its also frequently done on metals, plastics, cloth and composite materials. On paper it is often carried out as a large-scale industrial process, and is an essential part of publishing and transaction printing.</skos:definition>
+        <skos:prefLabel>4.4.1.1 2DPrinting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/2D_Scanning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/2D_Scanning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Scanning"/>
+        <skos:definition>2D Scanning refers to the Activity Type of capturing data by means of a two-dimensional scanner. Sometimes it can be used interchangeably with Photographing in order to achieve similar results. The main difference is that 2D scanning involves capturing the image gradually as a line of light moves over its surface, whereas in photography the entire image is captured at once.</skos:definition>
+        <skos:prefLabel>4.1.13.2.1 2DScanning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/3D_Printing -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/3D_Printing">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Printing"/>
+        <skos:definition>3D Printing refers to the Activity Type of manufacturing objects, using three-dimensional files and 3D printers. Objects are created by laying down or building up layers of material.</skos:definition>
+        <skos:prefLabel>4.4.1.2 3DPrinting</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/3D_Scanning -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/3D_Scanning">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Scanning"/>
+        <skos:definition>3D Scanning refers to the Activity Type of capturing data by means of a three-dimensional scanner. A 3D scanner is a device that analyses a real-world object or environment to collect data on its shape and possibly its appearance (e.g. color, texture). The collected data can then be used to construct digital, three-dimensional models useful for a wide variety of applications.</skos:definition>
+        <skos:prefLabel>4.1.13.2.2 3DScanning</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/activity-types/Research_Question_/_Topic_Identification -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/activity-types/Research_Question_/_Topic_Identification">
+        <rdf:type rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <skos:broader rdf:resource="http://dcu.gr/ontologies/nemo/activity-types/Conceiving"/>
+        <skos:definition>Research Question / Topic Identification refers to the Activity Type of identifying the main topic of a research Project or the main question that needs to be answered through a research thesis. This question investigates a specific component of a broader topic area and serves two purposes: to determine where and what kind of research the writer will be looking for and to identify the specific objectives the study or paper will address.</skos:definition>
+        <skos:prefLabel>1.3 Research Question / Topic Identification</skos:prefLabel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,2264 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://dcu.gr/ontologies/nemo/"
+     xml:base="http://dcu.gr/ontologies/nemo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:nemo-instances="http://dcu.gr/ontologies/nemo/instances/"
+     xmlns:fabio="http://purl.org/spar/fabio/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:nemo="http://dcu.gr/ontologies/nemo/"
+     xmlns:biro="http://purl.org/spar/biro/"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:doco="http://purl.org/spar/doco/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://dcu.gr/ontologies/nemo/">
+        <owl:versionIRI rdf:resource="http://dcu.gr/ontologies/nemo/1.2/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ScopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://dcu.gr/ontologies/nemo/ScopeNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://dcu.gr/ontologies/nemo/definition">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+
+	<owl:AnnotationProperty rdf:about="http://dcu.gr/ontologies/nemo/altLabel">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+		<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+
+    <!-- http://dcu.gr/ontologies/nemo/examples -->
+
+    <owl:AnnotationProperty rdf:about="http://dcu.gr/ontologies/nemo/examples">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasBroaderTerm -->
+
+    <owl:AnnotationProperty rdf:about="http://dcu.gr/ontologies/nemo/hasBroaderTerm"/>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://dcu.gr/ontologies/nemo/prefLabel">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#Label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/StepOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/StepOf">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasStep"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Step"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+    <!-- http://dcu.gr/ontologies/nemo/isReferencedIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isReferencedIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/ProvidesReferenceFor"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+
+        <!-- http://dcu.gr/ontologies/nemo/ProvidesReferenceFor -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/ProvidesReferenceFor">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isReferencedIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+
+    <!-- http://dcu.gr/ontologies/nemo/addresses -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/addresses">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isAddressedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/aggregates -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/aggregates">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isMemberOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Aggregation"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+
+    <!-- http://dcu.gr/ontologies/nemo/cites -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/cites">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isCitedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/isCitedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isCitedBy">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/cites"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+
+
+    <!-- http://dcu.gr/ontologies/nemo/comesFrom -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/comesFrom">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isOriginOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Discipline"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/isOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isOriginOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/comesFrom"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Discipline"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/comprises -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/comprises">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/contains -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/contains">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isContainedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dependsOn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/dependsOn">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/employs -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/employs">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isEmployedIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/follows -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/follows">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isFollowedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasAffiliation">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isAffiliationOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Person"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasCreator -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasCreator">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isCreatorOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasFormat -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasFormat">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isFormatOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasGoal -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasGoal">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isGoalOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasNarrowerTerm -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasNarrowerTerm">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasBroaderTerm"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasObjective -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasObjective">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isObjectiveOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasPart">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/partOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasParticipant">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/participatesIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasScope -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasScope">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isScopeOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasStep -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasStep">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Step"/>
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/StepOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasSubject">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isSubjectOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasTopicKeyword">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isTopicKeywordOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasType -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasType">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isTypeOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResourceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasBroaderTerm -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasBroaderTerm">
+		<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasNarrowerTerm"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/influences -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/influences">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isInfluencedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/SchoolOfThought"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isAddressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isAddressedBy">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/addresses"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isAffiliationOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isAffiliationOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasAffiliation"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Organization"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isCarriedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isCarriedBy">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isCarrierOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationCarrier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isCarrierOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isCarrierOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isCarriedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationCarrier"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isContainedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isContainedBy">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/contains"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isCreatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isCreatorOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasCreator"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isDocumentedIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isDocumentedIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/providesDocumentationFor"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isEmployedFor -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isEmployedFor">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isPurposeOfEmploymentOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isEmployedIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isEmployedIn">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/employs"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isFollowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isFollowedBy">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/follows"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isFormatOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isFormatOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasFormat"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isGoalOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isGoalOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasGoal"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isInfluencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isInfluencedBy">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/influences"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/SchoolOfThought"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isMemberOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/aggregates"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Aggregation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isObjectiveOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isObjectiveOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasObjective"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Goal"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isPrescribedAsFormatIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isPrescribedAsFormatIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/prescribesFormat"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isPrescribedAsTypeIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isPrescribedAsTypeIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/prescribesType"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResourceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isPrescribedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isPrescribedBy">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/prescribesTool"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isProductOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isProductOf">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/produces"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasIntention -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasIntention">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isIntentionOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isIntentionOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isIntentionOf">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasIntention"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+    <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+	</owl:ObjectProperty>
+    <!-- http://dcu.gr/ontologies/nemo/hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/hasRole">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isRoleOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+    <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ActorRole"/>
+	</owl:ObjectProperty>
+
+    <!-- http://dcu.gr/ontologies/nemo/isRoleOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isRoleOf">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasRole"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ActorRole"/>
+    <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+	</owl:ObjectProperty>
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isInterestedIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isInterestedIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isInterestOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+    <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+	</owl:ObjectProperty>
+
+    <!-- http://dcu.gr/ontologies/nemo/isInterestOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isInterestOf">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isInterestedIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+    <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+	</owl:ObjectProperty>
+
+    <!-- http://dcu.gr/ontologies/nemo/isPurposeOfEmploymentOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isPurposeOfEmploymentOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isEmployedFor"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isPurposeOfUseOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isPurposeOfUseOf">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isUsedFor"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isRegardedIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isRegardedIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/regards"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isRepresentatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isRepresentatedBy">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isRepresentationOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isRepresentationOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isRepresentationOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isRepresentatedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isResultOf">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/resultsIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isScopeOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isScopeOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasScope"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isSubjectOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isSubjectOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasSubject"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isTaughtIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isTaughtIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/teachesMethod"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isTopicOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isTopicKeywordOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasTopicKeyword"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isTreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isTreatedBy">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/treats"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ResearchQuestion"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isTriggeredeBy -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isTriggeredeBy">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/triggers"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ResearchQuestion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isTypeOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasType"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResourceType"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isUsedAsToolIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isUsedAsToolIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/usesTool"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isUsedFor -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isUsedFor">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isPurposeOfUseOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ActivityType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isUsedIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/uses"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isUsedInProject -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isUsedInProject">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/usesMethod"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/next -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/next">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/previous"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Step"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/partOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/partOf">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasPart"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/participatesIn">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/hasParticipant"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/prescribesFormat -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/prescribesFormat">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isPrescribedAsFormatIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/prescribesTool -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/prescribesTool">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isPrescribedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/prescribesType -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/prescribesType">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isPrescribedAsTypeIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResourceType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/previous -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/previous">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/next"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Step"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Step"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/produces -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/produces">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isProductOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/providesDocumentationFor -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/providesDocumentationFor">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isDocumentedIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/mentions -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/mentions">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isMentionedIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/isMentionedIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isMentionedIn">
+        <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/mentions"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:ObjectProperty>
+
+
+    <!-- http://dcu.gr/ontologies/nemo/regards -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/regards">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isRegardedIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+
+    <!-- http://dcu.gr/ontologies/nemo/resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/resultsIn">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isResultOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/teachesMethod -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/teachesMethod">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isTaughtIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Course"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/treats -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/treats">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isTreatedBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/ResearchQuestion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/triggers -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/triggers">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isTriggeredeBy"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ResearchQuestion"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/uses -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/uses">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isUsedIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/usesMethod -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/usesMethod">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isUsedInProject"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Project"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/usesTool -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/usesTool">
+    	<owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isUsedAsToolIn"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/when -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/when">
+	  <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isTimeOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Time"/>
+    </owl:ObjectProperty>
+	
+    <!-- http://dcu.gr/ontologies/nemo/when -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isTimeOf">
+	  <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/when"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Time"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+
+
+    <!-- http://dcu.gr/ontologies/nemo/where -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/where">
+	  <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/isPlaceOf"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Place"/>
+    </owl:ObjectProperty>
+    
+	<!-- http://dcu.gr/ontologies/nemo/isPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://dcu.gr/ontologies/nemo/isPlaceOf">
+	  <owl:inverseOf rdf:resource="http://dcu.gr/ontologies/nemo/where"/>
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Place"/>
+        <rdfs:range rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:ObjectProperty>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/license -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/license">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Reference -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/Reference">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Template -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/Template">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateAccepted -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/dateAccepted">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateCopyrighted -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/dateCopyrighted">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateCreated -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/dateCreated">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateModified -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/dateModified">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/datePublished -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/datePublished">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateSubmitted -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/dateSubmitted">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/description -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/description">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/NeMO_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/electronicArticleIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/electronicArticleIdentifier">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/firstName">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/hasURL">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/NeMO_Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/hasVersion">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/homePage -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/homePage">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://dcu.gr/ontologies/nemo/orcid -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/orcid">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/textualReference -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/textualReference">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://dcu.gr/ontologies/nemo/identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/identifier">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isCompatibleWith -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/isCompatibleWith">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Software"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isCreatedBy -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/isCreatedBy">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/issueIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/issueIdentifier">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/language -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/language">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/lastName">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/mbox -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/mbox">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/mbox -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/hasBio">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/publisher">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+    <!-- http://dcu.gr/ontologies/nemo/bibliographicAuthor -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/bibliographicAuthor">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/BibliographicRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+    <!-- http://dcu.gr/ontologies/nemo/bibliographicTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/bibliographicTitle">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/BibliographicRecord"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+
+
+    <!-- http://dcu.gr/ontologies/nemo/rights -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/rights">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/source -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/source">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/title -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/title">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/volume -->
+
+    <owl:DatatypeProperty rdf:about="http://dcu.gr/ontologies/nemo/volume">
+        <rdfs:domain rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Activity -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Activity">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Event"/>
+        <ScopeNote>This class comprises activities that take place in the scholarly domain. These are actions that are carried out by instances of Actor class, have a specific goal, and happen at a specific time and place. 
+This notion includes complex and long-lasting actions such as an academic conference or a research project, as well as simple short-lived activities such as the writing of a note.
+
+Activities in the scholarly domain constitute the actual actions or events that may happen and not the prescription of what should have happened. Instances of the latter should be documented using the Method class.</ScopeNote>
+        <examples>The ESF NeDiMAH Research Networking Project
+The 2014 ADHO Conference on Digital Humanities
+Writing a thesis 
+Translating a text</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ActivityType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ActivityType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Actor -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Actor">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/NeMO_Entity"/>
+        <ScopeNote>This class comprises people, either individually or in groups, who have the potential to perform intentional actions for which they can be held responsible.
+
+Individual people should be documented as instances of CIDOC CRM E21 Person, whereas groups should be documented as instances of either E74 Group or its subclass E40 Legal Body.
+
+Actors in the scholarly domain participate in activities through certain roles that define them. Depending on the actual actions that take place in an activity an actor can have more than one role that could be prescribed in a method.</ScopeNote>
+        <examples>Athens University of Economics and Business 
+John Smith
+Digital Curation Unit
+Library of Congress</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ActorRole -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ActorRole">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Aggregation -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Aggregation">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Annotation -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Annotation">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ApplicationMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ApplicationMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Application Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Assertion -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Assertion">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ConceptualObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/AudioMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/AudioMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Audio Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Collection -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Collection">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ConceptualObject -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ConceptualObject">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Object"/>
+        <ScopeNote>This class comprises immaterial products of our minds and other human produced data that have become objects of a discourse about their identity, circumstances of creation or historical implication. 
+
+Instances of this class are created, invented or thought by someone, and then may be documented or communicated between persons. Conceptual objects can simultaneously exist on more than one particular physical carrier, such as paper, flash memory, marks, audio media, paintings, photos, etc.</ScopeNote>
+        <examples>The topic of a thesis 
+Manchester School of thought
+Discipline of History of Art
+Semiotic Analysis</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ContentItem -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ContentItem">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Course -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Course">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Dataset -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Dataset">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Discipline -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Discipline">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+        <ScopeNote>This class comprises conceptual objects that constitute concentrations of knowledge in an academic field. A discipline incorporates expertise, people, projects, communities, challenges, studies, inquiry, and research areas that are strongly associated with a particular academic area of study.</ScopeNote>
+        <examples>Archaeology
+Electrical Engineering
+Anthropology
+Glossology
+History of Art</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Event -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Event">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/NeMO_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Goal -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Goal">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Group -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Group">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ImageMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ImageMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Image Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/InformationCarrier -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/InformationCarrier">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/InformationResource -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/InformationResource">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ConceptualObject"/>
+        <ScopeNote>This class comprises all instances of information that can be used as resources in activities in the scholarly domain. All kinds of Information, that can be the product of or used in a scholarly activity, are considered as information resources. 
+
+Instances of this Class are identifiable, immaterial units of information that exist on one or more physical carriers. These information items can be characterized according to their format, type or topic and can appear either as the input or the output of an activity.</ScopeNote>
+        <examples>A research article
+Encyclopedia Britannica
+A scientific journal
+A set of Dublin Core metadata
+A computer program code
+A dataset with measurements from an archeological excavation</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/InformationResourceType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/InformationResourceType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/MediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/MediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/MessageMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/MessageMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Message Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Method -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Method">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ConceptualObject"/>
+        <ScopeNote>This class comprises documented descriptions, plans or procedures that describe in a systematic or informal way how to accomplish specific kinds of activities. 
+
+Instances of this class can be considered as the “recipes” that describe how to combine different ingredients (information resources or physical objects), which instruments to use and which steps to follow in order to accomplish a particular activity.
+
+Methods can be referenced in bibliography, taught in a Course or be influenced by a particular School Of Thought.</ScopeNote>
+        <examples>Cluster analysis
+Spatial data analysis
+POS Tagging
+Stemmatics
+Biographical method</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Model -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Model">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ConceptualObject"/>
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ModelMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ModelMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Model Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/MultipartMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/MultipartMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Multipart Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/NeMO_Entity -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/NeMO_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Object -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Object">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/NeMO_Entity"/>
+        <ScopeNote>This general class comprises usable discrete, identifiable, persistent items that can be documented as single units.
+
+Instances of this class can be either intellectual products of our minds, or physical objects, that are involved in activities. Aggregations of objects can be regarded as collections.
+
+Depending on their use, objects can also be characterized as instruments used in specific actions.</ScopeNote>
+        <examples>Adobe Photoshop
+The topic of a thesis 
+Web Of Science website (http://www.ekt.gr/wos/)
+The Discipline of Applied Glossology
+A research Article</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Organization -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Organization">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Group"/>
+    </owl:Class>
+    
+    <!-- http://dcu.gr/ontologies/nemo/BibliographicRecord -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/BibliographicRecord">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:Class>
+
+    <!-- http://dcu.gr/ontologies/nemo/Figure -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Figure">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:Class>
+
+    <!-- http://dcu.gr/ontologies/nemo/Table -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Table">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:Class>
+
+    <!-- http://dcu.gr/ontologies/nemo/BibliographicReferenceList -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/BibliographicReferenceList">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:Class>
+
+    <!-- http://dcu.gr/ontologies/nemo/BibliographicReferenceList -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/BibliographicReferenceList">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Aggregation"/>
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:Class>
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Document -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/LinguisticObject">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ContentItem"/>
+    </owl:Class>
+
+
+
+   <!-- http://dcu.gr/ontologies/nemo/Team -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Team">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Group"/>
+    </owl:Class>
+    
+
+    <!-- http://dcu.gr/ontologies/nemo/Person -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Person">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/PhysicalObject -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/PhysicalObject">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/PhysicalTool -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/PhysicalTool">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Place -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Place">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/NeMO_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Project -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Project">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Proposition -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Proposition">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/ResearchQuestion -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/ResearchQuestion">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/SchoolOfThought -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/SchoolOfThought">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+        <ScopeNote>This class comprises conceptual objects that constitute ways of thinking that are shared and followed by particular groups of people. 
+
+Instances of this Class are often named after their founders or their places of origin and usually denote common opinion or outlook.</ScopeNote>
+        <examples>The Manchester school of thought
+The Chicago school of architecture
+Behaviorism
+Freud&apos;s school of thought</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Software -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Software">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/InformationResource"/>
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Step -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Step">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/TextMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/TextMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Text Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Time -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Time">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/NeMO_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Tool -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Tool">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Object"/>
+        <ScopeNote>This class comprises objects that are specifically designed to support activities. Tools are used for specific purposes in order to accomplish certain tasks or actions. 
+
+Instances of this class can be of material or immaterial nature, such as a round hand brush used in archeological excavations, or a computer program used in image enhancement.</ScopeNote>
+        <examples>Evernote (App for iPad)
+MS Word 2013
+Online registration for a conference</examples>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Topic -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Topic">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/Type"/>
+        <ScopeNote>This class comprises identifiable conceptual objects that denote the essence or the main concept of a discourse. 
+
+Instances of this class are usually in the form of words or phrases that summarize the main idea of an information resource.</ScopeNote>
+        <examples>examples &quot;Holocaust
+Islam and Nation-State
+Nuer Kinship</examples>
+    </owl:Class>
+    
+
+
+
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Type -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/Type">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/ConceptualObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/VideoMediaType -->
+
+    <owl:Class rdf:about="http://dcu.gr/ontologies/nemo/VideoMediaType">
+        <rdfs:subClassOf rdf:resource="http://dcu.gr/ontologies/nemo/MediaType"/>
+        <rdfs:Label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Video Format</rdfs:Label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- foaf:firstName -->
+
+    <owl:NamedIndividual rdf:about="foaf:firstName">
+        <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/License -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/License">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/license"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/Organization -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/Organization">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/license"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/cites -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/cites">
+        <owl:sameAs rdf:resource="http://purl.org/spar/cito/cites"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/contains -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/contains">
+        <owl:sameAs rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/creator -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/creator">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/creator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateAccepted -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/dateAccepted">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/dateAccepted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateCopyrighted -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/dateCopyrighted">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/dateCopyrighted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateCreated -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/dateCreated">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/created"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateIssued -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/dateIssued">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/issued"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateModified -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/dateModified">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/modified"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/dateSubmitted -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/dateSubmitted">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/dateSubmitted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/firstName -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/firstName">
+        <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/firstName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasAffiliation -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/hasAffiliation">
+        <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/member"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasURL -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/hasURL">
+        <owl:sameAs rdf:resource="http://purl.org/spar/fabio/hasURL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/hasVersion -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/hasVersion">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/hasVersion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/homePage -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/homePage">
+        <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/homePage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/identifier -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/identifier">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isContainedBy -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/isContainedBy">
+        <owl:sameAs rdf:resource="http://www.essepuntato.it/2008/12/pattern#isContainedBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/isReferencedBy -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/isReferencedBy">
+        <owl:sameAs rdf:resource="http://purl.org/spar/biro/isReferencedBy"/>
+		
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/issueIdentifier -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/issueIdentifier">
+        <owl:sameAs rdf:resource="http://prismstandard.org/namespaces/basic/2.0/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/language -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/language">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/lastName -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/lastName">
+        <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/lastName"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/mbox -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/mbox">
+        <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/mbox"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/providesDataFor -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/providesDataFor">
+        <owl:sameAs rdf:resource="http://purl.org/spar/cito/providesDataFor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/publisher -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/publisher">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/publisher"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/references -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/references">
+        <owl:sameAs rdf:resource="http://purl.org/spar/biro/references"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/rights -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/rights">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/source -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/source">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/source"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/title -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/title">
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dcu.gr/ontologies/nemo/volumeIdentifier -->
+
+    <owl:NamedIndividual rdf:about="http://dcu.gr/ontologies/nemo/volumeIdentifier">
+        <owl:sameAs rdf:resource="http://prismstandard.org/namespaces/basic/2.0/volume"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/basic/2.0/ -->
+
+    <owl:NamedIndividual rdf:about="http://prismstandard.org/namespaces/basic/2.0/"/>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/basic/2.0/volume -->
+
+    <owl:NamedIndividual rdf:about="http://prismstandard.org/namespaces/basic/2.0/volume"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/dateAccepted"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/dateCopyrighted"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/dateSubmitted"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/spar/biro/isReferencedBy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/biro/isReferencedBy"/>
+    
+
+
+    <!-- http://purl.org/spar/biro/references -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/biro/references"/>
+    
+
+
+    <!-- http://purl.org/spar/cito/cites -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/cito/cites"/>
+    
+
+
+    <!-- http://purl.org/spar/cito/providesDataFor -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/cito/providesDataFor"/>
+    
+
+
+    <!-- http://purl.org/spar/fabio/hasURL -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/hasURL"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#contains -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2008/12/pattern#contains"/>
+    
+
+
+    <!-- http://www.essepuntato.it/2008/12/pattern#isContainedBy -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2008/12/pattern#isContainedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <owl:NamedIndividual rdf:about="http://xmlns.com/foaf/0.1/firstName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homePage -->
+
+    <owl:NamedIndividual rdf:about="http://xmlns.com/foaf/0.1/homePage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/lastName -->
+
+    <owl:NamedIndividual rdf:about="http://xmlns.com/foaf/0.1/lastName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:NamedIndividual rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/member -->
+
+    <owl:NamedIndividual rdf:about="http://xmlns.com/foaf/0.1/member"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
